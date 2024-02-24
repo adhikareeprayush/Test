@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Importing the Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/apercu-font@1.0.0/stylesheet.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <!-- Linkig the CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link Remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+        integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid px-5">
+            <a class="navbar-brand me-3" href="#">Prayush.</a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" id="side-nav-toggle"
+                style="cursor: pointer;">
+                <i class="ri-menu-2-line"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Learnings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="education.html">Education</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center justfiy-content-between gap-2 social-links">
+                    <!-- Icons with links -->
+                    <!-- Dark Mode -->
+                    <a href="#"><i class="ri-moon-fill social"></i></a>
+                    <a href="https://github.com/adhikareeprayush" target="_blank"><i
+                            class="ri-github-fill social"></i></a>
+                    <a href="https://www.linkedin.com/in/prayushadhikari/" target="_blank"><i
+                            class="ri-linkedin-fill social"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="side-nav" id="side-nav">
+        <div class="side-nav-content p-3">
+            <div class="side-nav-header d-flex justify-content-end w-100">
+                <i class="ri-close-line fs-5" id="close-side-nav"></i>
+            </div>
+            <div class="side-nav-links d-flex flex-column">
+                <a href="#">Projects</a>
+                <a href="#">Learnings</a>
+                <a href="#">Education</a>
+            </div>
+            <div class="side-nav-social d-flex align-items-center justify-content-around">
+                <a href="#" target="_blank"><i class="ri-moon-fill social"></i></a>
+                <a href="#" target="_blank"><i class="ri-github-fill social"></i></a>
+                <a href="https://www.linkedin.com/in/prayush-singh-1b3b3b1b3/" target="_blank"><i
+                        class="ri-linkedin-fill social"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign up form -->
+    <section class="signup-section d-flex align-items-center justify-content-start p-3 flex-column">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <div class="signup-content">
+                        <h1 style="text-align: center;">Sign Up</h1>
+                        <form action="#" method="POST">
+                            <!-- Full Name -->
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="first-name">Full Name</label>
+                                        <input type="text" class="form-control" id="first-name" placeholder="Full Name"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Phone Number and Email -->
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <!-- Phone number with a option to select county and country code -->
+                                        <label for="phone-number">Phone Number</label>
+                                        <div class="input-group">
+                                            <!-- Selectable Country Code with countries and flags -->
+                                            <select class="form-select border-0 shadow-none"
+                                                style="max-width: fit-content;" id="inputGroupSelect01">
+                                                <option selected>+91</option>
+                                                <option value="1">+977</option>
+                                                <option value="2">+1</option>
+                                                <option value="3">+44</option>
+                                            </select>
+                                            <input type="text" class="form-control" placeholder="Phone Number"
+                                                aria-label="Phone Number" aria-describedby="basic-addon1" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <!-- Email -->
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <!-- Email -->
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" id="email" placeholder="Email"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Username and Password -->
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+                                        <input type="text" class="form-control" id="username" placeholder="Username"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Password"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sign Up Button -->
+                            <div class="row mb-3">
+                                <div class="col-lg-12 d-flex justify-content-center">
+                                    <!-- signup button -->
+                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <!-- <footer class="footer-section">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-lg-12">
+                    <div class="footer-content">
+                        <p>&copy; 2024 Prayush. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+
+</body>
+
+<!-- Linking the JS file -->
+<script src=" js/script.js"></script>
+<!-- Bootstrap CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<script>
+    const sideNav = document.getElementById('side-nav');
+    const sideNavToggle = document.getElementById('side-nav-toggle');
+    const close = document.getElementById('close-side-nav');
+
+    sideNavToggle.addEventListener('click', () => {
+        sideNav.classList.add('active');
+    });
+
+    close.addEventListener('click', () => {
+        sideNav.classList.remove('active');
+    });
+
+    // HeroSection height = 100vh - Navbar height
+    const heroSection = document.querySelector('.hero-section');
+    const navbar = document.querySelector('.navbar');
+
+    heroSection.style.height = `calc(100vh - ${navbar.clientHeight}px)`;
+
+
+</script>
+
+</html>
